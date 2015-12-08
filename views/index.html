@@ -5,9 +5,67 @@
 		<script src="../javascripts/mainController.js"></script>
 		<script src="../javascripts/index.js"></script>
 		<link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+		<title>Noderp</title>
 	</head>
 	<body>
-		helluuuuu!
-		<div ng-controller="MainController">{{ greeting }}</div>
+		<div id="header-container">{% include '../public/templates/header.html' %}</div>
+		<div id="page">
+			<div id="content-wrapper">
+				<div id="content">
+					<table id="content-table">
+						<tr>
+							<td class="content-cell content-cell-big" colspan="6">
+								<img class="content-image-big" src="../images/stock photos/pushup_girl.jpg"/>
+								<a href="#"  class="content-header-big">- Slik trener du core</a>
+								<div class="tag-links">
+									<a>#fitness</a><a>#core</a><a>#kroppsvekt</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="content-cell content-cell-small" colspan="2">
+								<img class="content-image-small" src="../images/stock photos/core1.jpeg"/>
+								<a href="#"  class="content-header-small">- Få sommerkroppen 2016 på 1-2-3</a>
+							</td>
+							<td class="content-cell content-cell-small" colspan="2">
+								<img class="content-image-small" src="../images/stock photos/back_girl.jpg"/>
+								<a href="#"  class="content-header-small">- Hvordan unngå skulderskade</a>
+							</td>
+							<td class="content-cell content-cell-small" colspan="2">
+								<img class="content-image-small" src="../images/stock photos/spinning_class.jpg"/>
+								<a href="#"  class="content-header-small">- Motivasjon ved gruppertreninger</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="content-cell content-cell-big" colspan="6">
+								<img class="content-image-big" src="../images/stock photos/green_guide.jpg"/>
+								<a href="#"  class="content-header-big">- Den store grøntguiden</a>
+								<div class="tag-links">
+									<a>#kosthold</a><a>#livsstil</a><a>#sunnhet</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td class="content-cell content-cell-medium" colspan="3">
+								<img class="content-image-medium" src="../images/stock photos/runner.jpg"/>
+								<a href="#"  class="content-header-medium">- Gjennomfør marathondrømmen i år</a>
+							</td>
+							<td class="content-cell content-cell-medium" colspan="3">
+								<img class="content-image-medium" src="../images/stock photos/hill.jpg"/>
+								<a href="#"  class="content-header-medium">- Bakkeintervaller, din beste venn</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="right-content">
+					<table id="right-content-table">
+						<tr>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="footer-container">{% include '../public/templates/footer.html' %}</div>
 	</body>	
 </html>
